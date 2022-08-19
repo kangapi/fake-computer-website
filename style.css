@@ -1,0 +1,58 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(6,103,166);
+    background: linear-gradient(90deg, rgba(6,103,166,1) 0%, rgba(0,232,255,1) 100%);
+}
+
+.icon {
+    max-width: 50px;
+    cursor: pointer;
+}
+
+#mydiv {
+    position: absolute;
+    z-index: 9;
+    background-color: #f1f1f1;
+    text-align: center;
+    border: 1px solid #d3d3d3;
+    border-radius: 10px;
+    box-shadow: 10px 5px 3em gray;
+}
+
+#mydivheader {
+    padding: 10px;
+    cursor: move;
+    z-index: 10;
+    background-color: rgb(232,234,237);
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.dots {
+    position: absolute;
+    top: 11px;
+    left: 11px;
+}
+
+.dot {
+
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #bbb;
+    cursor: pointer;
+}
+
+.red {
+    background-color: rgb(252,96,91);
+}
+.yellow {
+    background-color: rgb(252,187,64);
+}
+.green {
+    background-color: rgb(50,196,71);
+}
