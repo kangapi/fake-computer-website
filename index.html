@@ -9,10 +9,32 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-<img id="chrome" class="icon" src="assets/Google_Chrome_icon.png" alt="Google">
 
-<div id="mydiv">
-    <div id="mydivheader">
+<!--Set icons in the desktop-->
+<div class="icons">
+    <img id="chrome" class="icon" src="assets/Google_Chrome_icon.png" alt="chrome">
+    <img id="terminal" class="icon" src="assets/terminal-icon.png" alt="terminal">
+</div>
+
+<!--terminal window-->
+<div id="terminaldiv">
+    <div id="terminalheader">
+        Terminal
+        <div class="dots">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+        </div>
+    </div>
+    <div class="myContent">
+        <p>This is a fake terminal !!!!</p>
+        <p>By kangapi</p>
+    </div>
+</div>
+
+<!--Chrome window-->
+<div id="chromediv">
+    <div id="chromeheader">
         Chrome
         <div class="dots">
             <span class="dot red"></span>
@@ -25,6 +47,8 @@
         <p>By kangapi</p>
     </div>
 </div>
+
+<!--Load the script file-->
 <script src="index.js"></script>
 
 </body>

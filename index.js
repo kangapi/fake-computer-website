@@ -1,23 +1,36 @@
 //Make the DIV element draggagle:
 
 // Const
-const mydivd = document.getElementById("mydiv");
+const chromediv = document.getElementById("chromediv");
+const terminaldiv = document.getElementById("terminaldiv");
+const chrome = document.getElementById("chrome");
+const terminal = document.getElementById("terminal");
+
+var closeChrome = document.getElementsByClassName("dot red")[1];
+var closeTerminal = document.getElementsByClassName("dot red")[0];
 
 // Drag the DIV
-dragElement(mydivd);
+dragElement(chromediv);
+dragElement(terminaldiv);
 
 // Close the DIV
-var close = document.getElementsByClassName("dot red")[0];
-close.onclick = function() {
-    mydivd.style.display = "none";
+
+closeChrome.onclick = function() {
+    chromediv.style.display = "none";
+}
+closeTerminal.onclick = function() {
+    terminaldiv.style.display = "none";
 }
 window.onload = function() {
-    mydivd.style.display = "none";
+    chromediv.style.display = "none";
+    terminaldiv.style.display = "none";
 }
 
-var chrome = document.getElementById("chrome");
 chrome.onclick = function() {
-    mydivd.style.display = "block";
+    chromediv.style.display = "block";
+}
+terminal.onclick = function() {
+    terminaldiv.style.display = "block";
 }
 
 function dragElement(elmnt) {
