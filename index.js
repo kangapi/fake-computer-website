@@ -11,6 +11,9 @@ var close = document.getElementsByClassName("dot red")[0];
 close.onclick = function() {
     mydivd.style.display = "none";
 }
+window.onload = function() {
+    mydivd.style.display = "none";
+}
 
 var chrome = document.getElementById("chrome");
 chrome.onclick = function() {
